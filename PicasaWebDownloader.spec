@@ -10,6 +10,7 @@ Source0:	http://www.tomergabel.com/content/binary/PicasaWebDownloader11.zip
 Patch0:		%{name}-url.patch
 URL:		http://www.tomergabel.com/PicasaWeb+Downloader.aspx
 BuildRequires:	mono-csharp
+BuildRequires:	unzip
 Requires:	mono
 ExcludeArch:	i386
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
