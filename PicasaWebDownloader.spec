@@ -7,8 +7,11 @@ License:	WTFPL
 Group:		Applications/Graphics
 Source0:	http://www.tomergabel.com/content/binary/PicasaWebDownloader12.zip
 # Source0-md5:	e98b327af6fff08964aeb18fae1a0fc4
+Patch0:		%{name}-imgmax.patch
 URL:		http://www.tomergabel.com/PicasaWebDownloader.aspx
 BuildRequires:	mono-csharp
+BuildRequires:	rpmbuild(macros) >= 1.566
+BuildRequires:	sed >= 4.0
 BuildRequires:	unzip
 Requires:	mono
 ExcludeArch:	i386
@@ -25,6 +28,8 @@ Windows).
 
 %prep
 %setup -q -c
+%undos Program.cs
+%patch0 -p1
 
 %build
 gmcs -out:PicasaWebDownloader.exe Program.cs AssemblyInfo.cs

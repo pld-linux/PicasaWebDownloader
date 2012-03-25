@@ -1,0 +1,11 @@
+--- PicasaWebDownloader-1.2/Program.cs.orig	2008-09-11 18:10:26.000000000 +0200
++++ PicasaWebDownloader-1.2/Program.cs	2012-03-25 09:46:04.956436678 +0200
+@@ -64,7 +64,7 @@
+         /// corresponding Google data API URLs.
+         /// </summary>
+         const string GoogleAPIReplacementPattern =
+-            "http://picasaweb.google.${tld}/data/feed/api/user/${username}/album${qual}/${album}?kind=photo&${authkey}";
++            "http://picasaweb.google.${tld}/data/feed/api/user/${username}/album${qual}/${album}?kind=photo&imgmax=d&${authkey}";
+ 
+ 	    /// <summary>
+ 	    /// A regular expression used to match counter suffixes ("(2)", "(3)" etc.) in filenames.
