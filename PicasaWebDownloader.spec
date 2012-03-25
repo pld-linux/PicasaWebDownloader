@@ -1,14 +1,13 @@
 Summary:	PicasaWeb Downloader
 Summary(pl.UTF-8):	Narzędzie do ściągania albumów z serwisu PicasaWeb
 Name:		PicasaWebDownloader
-Version:	1.1
+Version:	1.2
 Release:	1
 License:	WTFPL
 Group:		Applications/Graphics
-Source0:	http://www.tomergabel.com/content/binary/PicasaWebDownloader11.zip
-# Source0-md5:	3edba3a4973fce37c884b286a7e3e567
-Patch0:		%{name}-url.patch
-URL:		http://www.tomergabel.com/PicasaWeb+Downloader.aspx
+Source0:	http://www.tomergabel.com/content/binary/PicasaWebDownloader12.zip
+# Source0-md5:	e98b327af6fff08964aeb18fae1a0fc4
+URL:		http://www.tomergabel.com/PicasaWebDownloader.aspx
 BuildRequires:	mono-csharp
 BuildRequires:	unzip
 Requires:	mono
@@ -26,7 +25,6 @@ Windows).
 
 %prep
 %setup -q -c
-%patch0 -p1
 
 %build
 gmcs -out:PicasaWebDownloader.exe Program.cs AssemblyInfo.cs
