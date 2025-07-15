@@ -29,7 +29,7 @@ Windows).
 %prep
 %setup -q -c
 %undos Program.cs
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 gmcs -out:PicasaWebDownloader.exe Program.cs AssemblyInfo.cs
