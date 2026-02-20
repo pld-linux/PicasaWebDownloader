@@ -2,7 +2,7 @@ Summary:	PicasaWeb Downloader
 Summary(pl.UTF-8):	Narzędzie do ściągania albumów z serwisu PicasaWeb
 Name:		PicasaWebDownloader
 Version:	1.2
-Release:	1
+Release:	2
 License:	WTFPL
 Group:		Applications/Graphics
 Source0:	http://www.tomergabel.com/content/binary/PicasaWebDownloader12.zip
